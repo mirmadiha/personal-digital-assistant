@@ -1,10 +1,22 @@
 function ProfileCard({title,handle,image}){
-    return <div>
-        <h2>Profile Card</h2>
-        <img src={image}/>
-        <h5>Title is {title}</h5>
-        <h5>Social handle is {handle}</h5>
+    return(
+        <div class="card">
+        <div class="card-image">
+        <figure class="image is-1by1">
+        <img
+        src={image} alt="pda logo"
+        />
+        </figure>
         </div>
+
+        <div className="card-content">
+            <div className="media-content">
+            <p className="title is-4">{title}</p>
+            <p className="subtitle is-6">{handle}</p>
+            </div>
+        </div>
+    </div>
+    );
 }
 
 export default ProfileCard;
